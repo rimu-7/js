@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>hello</h1>
+</body>
+<script>
+    const div = document.createElement("div");
+    div.className = "main";
+    div.id = Math.round(Math.random()*10+1)
+    
+    div.setAttribute("title", "generated title"); // Corrected method
+    
+    div.style.backgroundColor = "green";
+    
+    div.style.padding = "20px";
+    
+    const addText = document.createTextNode("Generated Text"); // Corrected method
+    
+    div.appendChild(addText);
+    
+    document.body.appendChild(div);
+    
+    console.log(div);
+</script>
+</html>
