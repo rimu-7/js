@@ -1,0 +1,67 @@
+body{
+    background-color: #414141;
+    color: #fff;
+}
+nav {
+    background-color: #fff;
+    color: #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  p{
+      margin: 10px;
+  }
+  a{
+      color: #fff;
+      text-decoration: none;
+      background-color: #414141;
+      padding: 5px;
+      margin: 2px;
+      border-radius: 5px;
+  }
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.pass{
+    background: lightgreen;
+    height: 40px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.timeout{
+    height: 30px;
+    width: 200px;
+}
+#result {
+    display: inline-block;
+    color: #414141;
+}
+#copyIcon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    display: none; 
+}
+#copyMessage {
+    display: none; /* Initially hidden */
+    color: green;
+    margin-left: 10px;
+}
+
+

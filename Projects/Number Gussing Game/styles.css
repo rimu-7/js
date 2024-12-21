@@ -1,62 +1,68 @@
-body{
-    background-color: #212121;
-    color: #fff;
+body {
+  background-color: #212121;
+  color: #fff;
 }
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    background-color: inherit;
-    border: none;
-  }
-  
-  #button {
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    display: block;
-  }
-a{
-    text-decoration: none;
-  }
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: inherit;
+  border: none;
+}
+p {
+  margin: 20px;
+}
+#button {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
 
 #button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-.wrapper,.resultParas, .form{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper,
+.resultParas,
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.title{
+.title {
   font-size: 3rem;
 }
-.guessField, .submit{
+.guessField,
+.submit {
   padding: 1rem;
   border-radius: 10px;
   margin: 20px;
   width: 30vh;
 }
 #newGame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0;
-    width: 30vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    color: #212121;
-  }
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #212121;
+}

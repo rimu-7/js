@@ -4,11 +4,21 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #414141;
     color: #fff;
-    padding: 1em;
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  p{
+      margin: 10px;
+  }
+  a{
+      color: #fff;
+      text-decoration: none;
+      background-color: #414141;
+  }
 
 .center {
     display: flex;

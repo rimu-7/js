@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Message</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* To prevent scrolling */
+    }
+
+    #popup {
+      position: fixed;
+      top: -100px; /* Start off the screen */
+      left: 0;
+      width: 100%;
+      background-color: rgba(255,0,0,0.2);
+      text-align: center;
+      padding: 20px;
+      display: none; /* Initially hidden */
+      animation: slideDown 2s forwards; /* Smoother animation */
+    }
+
+    @keyframes slideDown {
+      from {
+        top: -100px; /* Start off the screen */
+      }
+      to {
+        top: 0; /* End at the top of the page */
+      }
+    }
+    
+    #stop {
+      border-radius: 50%;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <div id="popup">
+    Tata bye bye....
+    <button id="stop">x</button>
+  </div>
+
+  <script>
+    const showPopup = () => {
+      const popup = document.getElementById("popup");
+      popup.style.display = "block";
+    };
+
+    const changeText = () => {
+      document.querySelector("#popup").innerHTML;
+      document.querySelector("#stop").addEventListener("click", () => {
+        console.log("Stopped");
+        clearTimeout(changeMe);
+        document.getElementById("popup").style.display = "none";
+      });
+    };
+
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", () => {
+      console.log("Stopped");
+      clearTimeout(changeMe);
+      document.getElementById("popup").style.display = "none";
+    });
+
+    // Show the popup immediately when the page loads
+    showPopup();
+  </script>
+</body>
+</html>

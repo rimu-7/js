@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+table{
+    border: 2px solid #fff ;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+td, tr{
+    border: 1px solid #fff ;
+}

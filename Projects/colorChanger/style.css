@@ -14,7 +14,20 @@ body{
     border-radius: 10px;
 }
 
-
+.nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: inherit;
+    border: none;
+  }
+p{
+    margin: 20px;
+}
 
 .button {
     display: flex;
